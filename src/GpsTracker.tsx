@@ -6,7 +6,6 @@ export default function GpsTracker() {
   useEffect(() => {
     const interval = setInterval(() => {
       navigator.geolocation.getCurrentPosition(({ coords }) => {
-        console.log(coords)
         setLatitude(coords.latitude)
         setLongitude(coords.longitude)
       })
