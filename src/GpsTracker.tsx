@@ -10,7 +10,7 @@ export default function GpsTracker() {
         setLongitude(coords.longitude)
       })
     }, 100)
-    return () => clearInterval(interval);
+    return () => clearInterval(interval)
   }, [])
   return (
     <div>
