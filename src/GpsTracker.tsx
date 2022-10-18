@@ -11,7 +11,7 @@ export default function GpsTracker() {
       })
     }, 100)
     return () => clearInterval(interval);
-  }, []);
+  }, [])
   return (
     <div>
       <div>Latitude: {latitude}</div>
