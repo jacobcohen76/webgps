@@ -40,7 +40,7 @@ jobs:
         run: yarn run build
 
       - name: Upload Artifact
-        uses: m
+        uses: actions/upload-artifact@v2
         with:
           name: production-files
           path: ./dist
@@ -75,4 +75,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-
