@@ -9,7 +9,7 @@ export default function GpsTracker() {
         setLatitude(coords.latitude)
         setLongitude(coords.longitude)
       })
-    }, 100)
+    }, 500)
     return () => clearInterval(interval)
   }, [])
   return (
